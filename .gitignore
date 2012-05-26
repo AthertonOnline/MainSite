@@ -3,4 +3,5 @@ configuration.php
 configuration.php-dist
 hide_config_files.php
 delete_install.cgi
+logs/*
 .DS_Store
