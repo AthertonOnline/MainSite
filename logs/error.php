@@ -35,3 +35,5 @@
 2012-05-26	11:10:30	INFO	82.17.203.173	Joomla FAILURE: 	Invalid password
 2012-05-26	11:10:33	INFO	82.17.203.173	Joomla FAILURE: 	Invalid password
 2012-05-26	11:11:03	INFO	82.17.203.173	Joomla FAILURE: 	Invalid password
+2012-05-26	11:50:31	INFO	82.17.203.173	Joomla FAILURE: 	Invalid password
+2012-05-26	11:50:35	INFO	82.17.203.173	Joomla FAILURE: 	Invalid password
