@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<install version="1.5" type="plugin" group="editors" method="upgrade">
+	<name>Editor - Yoonique Markdown</name>
+	<version>11-15</version>
+	<creationDate>May 2011</creationDate>
+	<author>yoonique[.]net</author>
+	<authorEmail>markdown@yoonique.net</authorEmail>
+	<authorUrl>www.yoonique.net</authorUrl>
+	<copyright>Copyright (C) yoonique[.]net All rights reserved.</copyright>
+	<license>GNU General Public License version 3</license>
+	<description><![CDATA[
+		<h2>Markdown Extra Editor.</h2>
+		<p>This project wouldn't have been possible without:</p>
+		<ul>
+		<li><a href="http://markitup.jaysalvat.com">markItUp</a></li>
+		<li><a href="http://daringfireball.net/projects/markdown/">Markdown</a></li>
+		<li><a href="http://michelf.com/projects/php-markdown/extra/">Markdown Extra</a></li>
+		<li><a href="http://www.yoonique.net">yoonique[.]net</a></li>
+		<p>Tested with Zoo items and Joomla Articles</p>
+		</ul>
+	]]>
+	</description>
+
+	<files>
+		<folder>yoonique_markdown</folder>
+		<filename plugin="yoonique_markdown">yoonique_markdown.php</filename>
+	</files>
+
+	<params>
+		<param name="jquery" type="radio" default="yes" label="Load jQuery?" description="Load jQuery?">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param type="text" name="width" default='' label="Width" description="Enter the width for example 500 or 95%. This is optional." />
+	</params>
+
+	<config>
+		<fields name="params">
+			<fieldset name="main" label="Yoonique Markdown Settings">
+				<field name="jquery" type="radio" default="yes" label="Load jQuery?">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>
+				<field type="text" name="width" default='' label="Width" description="Enter the width for example 500 or 95%. This is optional." />
+			</fieldset>
+		</fields>
+	</config>
+</install>

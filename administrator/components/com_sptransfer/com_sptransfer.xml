@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6" method="upgrade" >
+
+	<name>COM_SPTRANSFER</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>February 2012</creationDate>
+	<author>SP CYEND</author>
+	<authorEmail>info@cyend.com</authorEmail>
+	<authorUrl>http://www.cyend.com</authorUrl>
+	<copyright>SP CYEND - All rights reserved.</copyright>
+        <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0.5</version>
+            <!-- Changes: -->
+            <!-- 1.0.0 Initial release -->            
+            <!-- 1.0.1 -->
+            <!-- a. Menus and modules added -->
+            <!-- 1.0.2 -->
+            <!-- a. Added index.html in folder admin/models/fields -->
+            <!-- 1.0.3 -->
+            <!-- a. Fix bug with selection in tables view -->
+            <!-- b. Added check on _ underscore for db prefix -->
+            <!-- 1.0.4 -->
+            <!-- a. Replace items -->            
+            <!-- 1.0.5 -->
+            <!-- a. Remove MySQLi restriction -->            
+	<!-- The description is optional and defaults to the name -->
+	<description>SP Transfer Component</description>
+
+	<!-- Runs on install/uninstall/update; New in 1.6 -->
+        <scriptfile>script.php</scriptfile>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update> <!-- Runs on update; New in 1.6 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	<files folder="site">
+		<filename>index.html</filename>		
+	</files>
+        <languages folder="language/site">
+		<language tag="en-GB">en-GB.com_sptransfer.ini
+                </language>
+	</languages>
+        <media destination="com_sptransfer" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+                <folder>images</folder>
+                <folder>js</folder>
+                <folder>swf</folder>
+	</media>
+	<administration>
+		<menu img="../media/com_sptransfer/images/sp-16x16.png">COM_SPTRANSFER_MENU</menu>
+                <submenu>
+			<!--
+				Note that all & must be escaped to &amp; for the file to be valid
+				XML and be parsed by the installer
+			-->
+			<menu link="option=com_sptransfer" img="class:install"
+				alt="SpTransfer/Core Transfer">COM_SPTRANSFER_TABLES_SUBMENU</menu>
+                        <menu link="option=com_sptransfer&amp;view=monitoring_log" img="class:preview"
+                                alt="SpTransfer/Monitoring Log">COM_SPTRANSFER_LOG_SUBMENU</menu>
+                        <menu link="option=com_sptransfer&amp;view=log" img="class:info"
+				alt="SpTransfer/History Log">COM_SPTRANSFER_HISTORY_SUBMENU</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>sptransfer.php</filename>
+			<filename>controller.php</filename>
+                        <filename>gpl-3.0.txt</filename>
+                        <folder>sql</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+                <languages folder="language/admin">
+			<language tag="en-GB">en-GB.com_sptransfer.ini</language>
+			<language tag="en-GB">en-GB.com_sptransfer.sys.ini</language>
+		</languages>
+	</administration>
+        
+        <config>
+            <fieldset name="general">
+                <field
+                    name="new_ids"
+                    type="list"
+                    default="1"
+                    label="COM_SPTRANSFER_NEW_IDS_LABEL"
+                    description="COM_SPTRANSFER_NEW_IDS_DESC">
+                    <option value="1">COM_SPTRANSFER_NEW_IDS_OPTION_1</option>
+                    <option value="0">COM_SPTRANSFER_NEW_IDS_OPTION_0</option>
+                    <option value="2">COM_SPTRANSFER_NEW_IDS_OPTION_2</option>
+                </field>  
+                <field
+                    name="duplicate_alias"
+                    type="list"
+                    default="1"
+                    label="COM_SPTRANSFER_DUPLICATE_ALIAS_LABEL"
+                    description="COM_SPTRANSFER_DUPLICATE_ALIAS_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field> 
+            </fieldset>
+            <fieldset name="database">
+                <field
+                    name="driver"
+                    type="list"
+                    default="0"
+                    label="COM_SPTRANSFER_DRIVER_LABEL"
+                    description="COM_SPTRANSFER_DRIVER_DESC">
+                    <option value="mysqli">MySQLi</option>
+                    <option value="mysql">MySQL</option>
+                </field>
+                <field
+                    name="host"
+                    type="text"
+                    size="100"
+                    default="localhost"
+                    label="COM_SPTRANSFER_HOST_LABEL"
+                    description="COM_SPTRANSFER_HOST_DESC"
+                  />
+                 <field
+                    name="source_database_name"
+                    type="text"
+                    size="100"
+                    default=""
+                    label="COM_SPTRANSFER_SOURCE_DATABASE_NAME_LABEL"
+                    description="COM_SPTRANSFER_SOURCE_DATABASE_NAME_DESC"
+                 />
+                 <field
+                    name="source_user_name"
+                    type="text"
+                    size="100"
+                    default=""
+                    label="COM_SPTRANSFER_SOURCE_USERNAME_NAME_LABEL"
+                    description="COM_SPTRANSFER_SOURCE_USER_NAME_DESC"
+                />
+                <field
+                    name="source_password"
+                    type="password"
+                    size="100"
+                    default=""
+                    label="COM_SPTRANSFER_SOURCE_PASSWORD_LABEL"
+                    description="COM_SPTRANSFER_SOURCE_PASSWORD_DESC"
+                />
+                <field
+                    name="source_db_prefix"
+                    type="text"
+                    size="100"
+                    default=""
+                    label="COM_SPTRANSFER_SOURCE_DB_PREFIX_LABEL"
+                    description="COM_SPTRANSFER_SOURCE_DB_PREFIX_DESC"
+                />
+                <field
+                    name="source_path"
+                    type="hidden"
+                    size="100"
+                    default=""
+                    label="COM_SPTRANSFER_SOURCE_PATH_LABEL"
+                    description="COM_SPTRANSFER_SOURCE_PATH_DESC"
+                />
+            </fieldset>
+            <fieldset
+                name="permissions"
+                label="JCONFIG_PERMISSIONS_LABEL"
+                description="JCONFIG_PERMISSIONS_DESC"
+                >
+
+                <field
+                    name="rules"
+                    type="rules"
+                    label="JCONFIG_PERMISSIONS_LABEL"
+                    filter="rules"
+                    validate="rules"
+                    component="com_sptransfer"
+                    section="component">
+                    <action name="core.delete"
+                            title="JACTION_DELETE"
+                            description="JACTION_DELETE_COMPONENT_DESC" />                            
+                    <action
+                            name="core.admin"
+                            title="JACTION_ADMIN"
+                            description="JACTION_ADMIN_COMPONENT_DESC" />
+                    <action
+                            name="core.manage"
+                            title="JACTION_MANAGE"
+                            description="JACTION_MANAGE_COMPONENT_DESC" />                    
+                </field>
+            </fieldset>
+        </config>
+</extension>

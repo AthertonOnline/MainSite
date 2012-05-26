@@ -1,0 +1,6 @@
+images/*
+configuration.php
+configuration.php-dist
+hide_config_files.php
+delete_install.cgi
+.DS_Store

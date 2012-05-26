@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Content - Yoonique Markdown</name>
+	<version>11-0</version>
+	<creationDate>May 2011</creationDate>
+	<author>yoonique[.]net</author>
+	<authorEmail>markdown@yoonique.net</authorEmail>
+	<authorUrl>www.yoonique.net</authorUrl>
+	<copyright>Copyright (C) yoonique[.]net All rights reserved.</copyright>
+	<license>GNU General Public License version 3</license>
+	<description><![CDATA[
+		<h2>Markdown Extra Content plugin</h2>
+		<p>This project wouldn't have been possible without:</p>
+		<ul>
+		<li><a href="http://daringfireball.net/projects/markdown/">Markdown</a></li> 
+		<li><a href="http://michelf.com/projects/php-markdown/extra/">Markdown Extra</a></li> 
+		<li><a href="http://www.bioinformatics.org/phplabware/internal_utilities/htmLawed">htmLawed</a></li> 
+		<li><a href="http://www.yoonique.net">yoonique[.]net</a></li> 
+		<p>Tested with Zoo items and Joomla Articles</p>
+		</ul>
+	]]>
+	</description>
+	<files>
+		<filename plugin="yoonique_markdown">yoonique_markdown.php</filename>
+		<folder plugin="yoonique_markdown">yoonique_markdown</folder>
+	</files>
+	<params>
+		<param name="htmlawed" type="radio" default="yes" label="Filter output with HTML purifier htmLawed?">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+	</params>
+
+	<config>
+		<fields name="params">
+			<fieldset name="main" label="Yoonique Markdown Settings">
+				<field name="htmlawed" type="radio" default="no" label="Filter output with HTML purifier htmLawed?">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

@@ -1,0 +1,263 @@
+/* setup */
+body {
+    background: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    color: #666;
+}
+a{
+    color: #444;
+}
+a:hover{
+    color: #888;
+}
+.clear{
+    display: block;
+    clear: both;
+}
+.hide{
+    display: block;
+    position: absolute;
+    top: -2000px;
+}
+.left{
+	float: left;
+	}
+.right{
+	float: right;
+	}
+.width{
+    width: 960px;
+    margin: 0px auto 0px auto;
+}
+.col3{
+	width: 306px;
+	float: left;
+	}
+.col3+.col3{
+	margin: 0px 0px 0px 21px;
+	}
+/* forms */
+.biginput{
+	font-size: 20px;
+	padding: 10px;
+	margin: 10px 5px;
+	color: #aaa;
+	background: white;
+	border: 1px solid #aaa;
+	}
+.bigbutton{
+	font-size: 20px;
+	padding: 10px;
+	margin: 10px 5px;
+	color: white;
+	background: #ce1d1d;
+	text-align: center;
+	border: 1px solid #ce1d1d;
+	}
+.bigbutton:hover{
+	color: white;
+	background: red;
+	}
+.medinput{
+	font-size: 16px;
+	padding: 5px;
+	margin: 10px 5px;
+	color: #aaa;
+	background: white;
+	border: 1px solid #aaa;
+	}
+.medbutton{
+	font-size: 16px;
+	padding: 5px;
+	margin: 10px 5px;
+	color: white;
+	background: #ce1d1d;
+	text-align: center;
+	border: 1px solid #ce1d1d;
+	}
+.medbutton:hover{
+	color: white;
+	background: red;
+	}
+/* header */
+.head {
+	width: 100%;
+	border-bottom: 6px solid black;
+	margin: 0px 0px 10px 0px;
+	}
+.logo{
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	background: url('../images/logo.png') no-repeat;
+	width: 150px;
+	height: 83px;
+	display: block;
+	float: left;
+	}
+.search{
+	float: right;
+	padding: 5px 0px;
+	}
+#nav{
+    height: 30px;
+    display: block;
+    float: right;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    clear: right;
+	}
+#nav ul{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    display: block;
+}
+#nav li{
+    float: left;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+#nav li a{
+    height: 18px;
+	color: black;
+    margin: 0px ;
+    padding: 7px 15px 5px 15px;
+    display: block;
+    text-decoration: none;
+}
+#nav li a:hover{
+	border-bottom: 6px solid #4046ba;
+	}
+#nav .active a{
+	border-bottom: 6px solid #ce1d1d;
+}
+/* content */
+hr{
+	background: #ccc;
+	height: 6px;
+	width: 100%;
+	border: none;
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	}
+.content h2{
+	color: #ccc;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	font-size: 20px;
+	font-weight: bold;
+	}
+.content .story{
+	border: 1px solid #eee;
+	background: #eee;
+	margin: 0px 0px 15px 0px;
+	padding: 10px;
+	}
+.content .story h3{
+	width: 207px;
+	float: left;
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+	}
+.content .story .avatar{
+	width: 70px;
+	height: 70px;
+	padding: 0px;
+	margin: 0px 0px 5px 5px;
+	float: right;
+	}
+.content .story p{
+	margin: 0px;
+	padding: 0px 0px 10px 0px;;
+	}
+.content .story .readmore a{
+	clear: both;
+	width: 266px;
+	background: #ccc;
+	margin: 0px;
+	color: #777;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 10px;
+	display: block;
+	}
+.content .story .readmore{
+	margin: 0px;
+	padding: 0px;
+	}
+.content .story .readmore a:hover{
+	background: #bbb;
+	color: #666;
+	}
+/* interactions box */
+.content .intbox{
+	background: #eee;
+	display: block;
+	padding: 5px 15px;
+	margin: 0px 0px 15px 0px;
+	}
+.content .intnav{
+	height: 30px;
+    display: block;
+    float: right;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+	border-bottom: 6px solid #aaa;
+	}
+.content .intnav ul{
+	margin: 0px;
+    padding: 0px;
+    float: left;
+    display: block;
+    }
+.content .intnav li{
+    float: left;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+.content .intnav li a{
+    height: 18px;
+	color: #777;
+    margin: 0px ;
+    padding: 7px 15px 5px 15px;
+    display: block;
+    text-decoration: none;
+}
+.content .intnav li a:hover{
+	border-bottom: 6px solid #4046ba;
+	}
+.content .intnav .active a{
+	border-bottom: 6px solid #ce1d1d;
+}
+.content .intcont{
+	height: 200px;
+	text-align: center;
+	padding: 15px;
+	display: block;
+	}
+/* footer */
+.footer{
+	width: 100%;
+	margin: 0px;
+	padding: 5px 0px;
+	border-top: 6px solid black;
+	display: block;
+	}
+.footer p{
+	margin: 0px;
+	padding: 0px;
+	}
+.footer .left{
+	margin: 30px 0px;
+	}
+
+

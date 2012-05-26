@@ -1,0 +1,97 @@
+/* for sidebar template */
+.sidebar{
+	float: right;
+	width: 250px;
+}
+.sidebar h2{
+	color: #ccc;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: 6px solid #ccc;
+	}
+.sidebar h3{
+	color: #ccc;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 5px 0px;
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: 6px solid #ccc;
+	}
+.sidebar .module{
+	border: 1px solid #eee;
+	background: #eee;
+	margin: 0px 0px 15px 0px;
+	padding: 10px;
+	}
+.sidebar ul, .sidebar li{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.sidebar li a{
+	padding: 5px;
+	width: 215px;
+	margin: 0px auto 0px auto;
+	text-align: center;
+	display: block;
+	background: #ccc;
+	color: #777;
+	text-decoration: none;
+}
+.sidebar li a:hover{
+	background: #bbb;
+	color: #666;
+	}
+.sidebar li+li{
+	margin: 10px 0px 0px 0px;
+	}
+.category_page{
+	float: left;
+	width: 690px;
+	}
+.category_page .story{
+	border: 1px solid #eee;
+	background: #eee;
+	margin: 0px 0px 15px 0px;
+	padding: 10px;
+	}
+.category_page .story h3{
+	width: 580px;
+	float: left;
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+	}
+.category_page .story .avatar{
+	width: 70px;
+	height: 70px;
+	padding: 0px;
+	margin: 0px 0px 10px 10px;
+	float: right;
+	}
+.category_page .story p{
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+	clear: left;
+	}
+.category_page .story .readmore a{
+	clear: both;
+	width: 648px;
+	background: #ccc;
+	margin: 0px;
+	color: #777;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 10px;
+	display: block;
+	}
+.category_page .story .readmore{
+	margin: 0px;
+	padding: 0px;
+	}
+.category_page .story .readmore a:hover{
+	background: #bbb;
+	color: #666;
+	}

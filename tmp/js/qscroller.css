@@ -1,0 +1,90 @@
+body {
+	font-family: verdana, arial, sans-serif;
+	font-size: 9pt;
+}
+
+.hide {
+	visibility: hidden;
+	position: absolute;
+	top: -400px;
+}
+
+#qscroller1 {
+	width:350px;
+	height:21px;
+	border:1px solid #c0c0c0;
+	background:#f0f0f0;
+}
+
+.qslide {
+	background: #f0f0f0;
+	font-size: 10pt;
+	padding: 3px;
+}
+
+#qscroller2 {
+	width:320px;
+	height:185px;
+	border:1px solid #c0c0c0;
+	background:#fff;
+}
+
+.qscroller2-nav {
+	font-size: 9pt;
+	width:320px;
+	height: 15px;
+	background:#f0f0f0;
+	border:1px solid #c0c0c0;
+}
+
+.qscroller2-nav a {
+	text-decoration: none;
+}
+
+.qscroller2-nav div {
+	float: right;
+}
+
+.qslide2 img {
+	float: left;
+	padding: 1px;
+	border: 1px solid #00ffff;
+	margin: 3px 15px 0 3px;
+}
+
+.qslide2 h1 {
+	margin:0 0 5px;
+	font-size: 110%;
+	color: #16387c;
+}
+
+#qscroller3 {
+	position: relative;
+	width:205px;
+	height:137px;
+	background: #000;
+}
+
+#qscroller3-nav {
+	position:absolute;
+	height:18px;
+	visibility: hidden;
+	background: #f0f0f0;
+	z-index: 1;
+	width: 100%;
+}
+
+#qscroller3-nav a {
+	text-decoration: none;
+}
+
+#qscroller3-nav div {
+	float: right;
+}
+
+#qscroller3-nav img {
+	border: none;
+	padding: 3px 2px 0;
+}
+
+

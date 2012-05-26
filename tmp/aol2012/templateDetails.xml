@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="template">
+	<name>Athy Online Template</name>
+	<creationDate>2012-03-01</creationDate>
+	<author>Ackers n Hartley</author>
+	<authorEmail>contact@bluecentury.co.uk</authorEmail>
+	<authorUrl>http://www.bluecentury.co.uk</authorUrl>
+	<copyright>Ackers n Hartley 2012</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.1</version>
+	<description>Athy Online Template</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+	</files>
+	<positions>
+		<position>search</position>
+		<position>nav</position>
+		<position>beforecomp</position>
+        <position>aftercomp</position>
+		<position>footer</position>
+	</positions>
+</extension>
