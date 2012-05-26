@@ -288,12 +288,43 @@ hr{
 	display: block;
 	padding: 5px 15px;
 	margin: 0px 0px 15px 0px;
+	text-align: center;
 	}
+.home .intbox p{
+	font-size: 16px;
+	}
+.home .intbox ul{
+	margin: 0px 0px 0px 200px;
+	padding: 0px;
+	}
+.home .intbox li{
+	margin: 0px;
+	padding: 0px;
+	list-style:none;
+	float: left;
+	}
+.home .intbox li a{
+	margin: 0px 5px 0px 5px;
+	padding: 10px;
+	color: white;
+	width: 150px;
+	text-decoration: none;
+	display: block;
+}
+.home .intbox .yt a{
+	background: red;
+}
+.home .intbox .fb a{
+	background: #3B5998;
+}
+.home .intbox .tw a{	
+	background: #4099FF;
+}
 .home .intnav{
 	height: 30px;
     display: block;
     float: right;
-    margin: 0px;
+    margin: 0px 0px 30px 0px;
     padding: 0px 0px 0px 0px;
     width: 100%;
 	border-bottom: 6px solid #aaa;
@@ -314,7 +345,7 @@ hr{
 .home .intnav li a{
     height: 18px;
 	color: #777;
-    margin: 0px ;
+    margin: 0px 0px 10px 0px;
     padding: 7px 15px 5px 15px;
     display: block;
     text-decoration: none;
