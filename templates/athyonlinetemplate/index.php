@@ -23,7 +23,6 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-			<p>skadjhfgasjfhsalkjdfhaslfghsalkfhaskljfhsalkjfhsaldf</p>
 			<div class="search">
 			<jdoc:include type="modules" name="search" />
 			</div>
