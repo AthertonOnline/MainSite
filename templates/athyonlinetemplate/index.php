@@ -35,7 +35,7 @@
 		<div class="clear"></div>
 		
 		<!-- page content -->
-		<h1>Back to normal</h1>
+		<h1>Ok, this should work now</h1>
 		<div class="content">
 			<div class="home">
 			<jdoc:include type="modules" name="beforecomp" style="xhtml" />
