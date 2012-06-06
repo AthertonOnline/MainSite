@@ -35,7 +35,7 @@
 		<div class="clear"></div>
 		
 		<!-- page content -->
-		<h1>sdflkj lfjdksh saldjf sldfjkhs dlfkjsdflkjsdahf lskadjfh sdlkjfh sadlkfjh f</h1>
+		<h1>Back to normal</h1>
 		<div class="content">
 			<div class="home">
 			<jdoc:include type="modules" name="beforecomp" style="xhtml" />
