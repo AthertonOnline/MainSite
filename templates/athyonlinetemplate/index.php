@@ -35,7 +35,7 @@
 		<div class="clear"></div>
 		
 		<!-- page content -->
-		<h1>Why no deploy?</h1>
+		
 		<div class="content">
 			<div class="home">
 			<jdoc:include type="modules" name="beforecomp" style="xhtml" />
