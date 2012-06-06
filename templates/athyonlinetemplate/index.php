@@ -23,6 +23,7 @@
 				</div>
 				<div class="clear"></div>
 			</div>
+			<h1>Git Test 2</h1>
 			<div class="search">
 			<jdoc:include type="modules" name="search" />
 			</div>
