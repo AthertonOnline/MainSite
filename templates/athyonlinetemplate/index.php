@@ -23,7 +23,7 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-			<h1>I am standing in the Atherleigh Ward and I am urging everyone to come out and vote.</h1>
+			<h1>Git Test 2</h1>
 			<div class="search">
 			<jdoc:include type="modules" name="search" />
 			</div>
