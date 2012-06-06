@@ -18,6 +18,8 @@
 		
 		<div class="head">
 			<div class="logo">
+				<div class="logo-wheel">
+				</div>
 				<div class="hide>
 				<h1>Atherton Online</h1>
 				</div>

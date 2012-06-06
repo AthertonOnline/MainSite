@@ -144,12 +144,30 @@ a:hover{
 .logo{
 	margin: 0px 0px 5px 0px;
 	padding: 0px;
-	background: url('../images/logo.png') no-repeat;
+	background: url('../images/logo_body.png') no-repeat;
 	width: 150px;
 	height: 83px;
 	display: block;
 	float: left;
 	}
+.logo-wheel {
+	background: url('../images/logo_wheel.png') no-repeat;
+	width: 44px;
+	height: 44px;
+	position: relative;
+	left: 65px;
+	top: 5px;
+	-webkit-transition: all 0.7s linear;
+	-moz-transition: all 0.7s linear;
+	-o-transition: all 0.7s linear;
+	-ms-transition: all 0.7s linear;
+}
+.logo-wheel:hover {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
 .search{
 	float: right;
 	padding: 5px 0px;
