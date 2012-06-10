@@ -17,14 +17,16 @@
 		<!-- page header -->
 		
 		<div class="head">
+		<a href="/">
 			<div class="logo">
 				<div class="logo-wheel">
 				</div>
-				<div class="hide>
+				<div class="hide">
 				<h1>Atherton Online</h1>
 				</div>
 				<div class="clear"></div>
 			</div>
+		</a>
 			<div class="search">
 			<jdoc:include type="modules" name="search" />
 			</div>
