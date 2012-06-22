@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="content">
+  <name>Content - Facebook Like And Share</name>
+  <author>Compago</author>
+  <creationDate>July 2011</creationDate>
+  <copyright>Copyright (C) 2011 Compago TLC. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>compagotlc@gmail.com</authorEmail>
+  <authorUrl>www.compago.it</authorUrl>
+  <version>3.5</version>
+  <description>Facebook Like And Share Joomla Plugin enable Facebook "Like button",the "Share This button", and the Comment Box on your published articles.</description>
+  <files>
+    <filename>index.html</filename>
+    <filename>link.png</filename>
+    <filename plugin="facebooklikeandshare">facebooklikeandshare.php</filename>
+  </files> 
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+          <field name="@spacer0" type="spacer" default="General Plugin Settings" label="&lt;b&gt;Plugin Settings&lt;/b&gt;" description="General Plugin Settings" />
+          <field name="enable_like" type="radio" default="1" label="Enable Like Button" description="Enable Like Button">
+             <option value="1">yes</option>
+             <option value="0">no</option>
+          </field>
+          <field name="enable_share" type="radio" default="1" label="Enable Share Button" description="Enable Share Button">
+             <option value="1">yes</option>
+             <option value="0">no</option>
+          </field>
+          <field name="enable_comments" type="radio" default="0" label="Enable Comments Box" description="Enable Comments Box">
+             <option value="1">yes</option>
+             <option value="0">no</option>  
+          </field>
+          <field name="language" type="list" default="en_US" label="Select a language code" description="Set the language for the like and send button">
+             <option value="ca_ES">Catalan</option><option value="cs_CZ">Czech</option><option value="cy_GB">Welsh</option><option value="da_DK">Danish</option><option value="de_DE">German</option><option value="eu_ES">Basque</option><option value="en_PI">English (Pirate)</option><option value="en_UD">English (Upside Down)</option><option value="ck_US">Cherokee</option><option value="en_US">English (US)</option><option value="es_LA">Spanish</option><option value="es_CL">Spanish (Chile)</option><option value="es_CO">Spanish (Colombia)</option><option value="es_ES">Spanish (Spain)</option><option value="es_MX">Spanish (Mexico)</option><option value="es_VE">Spanish (Venezuela)</option><option value="fb_FI">Finnish (test)</option><option value="fi_FI">Finnish</option><option value="fr_FR">French (France)</option><option value="gl_ES">Galician</option><option value="hu_HU">Hungarian</option><option value="it_IT">Italian</option><option value="ja_JP">Japanese</option><option value="ko_KR">Korean</option><option value="nb_NO">Norwegian (bokmal)</option><option value="nn_NO">Norwegian (nynorsk)</option><option value="nl_NL">Dutch</option><option value="pl_PL">Polish</option><option value="pt_BR">Portuguese (Brazil)</option><option value="pt_PT">Portuguese (Portugal)</option><option value="ro_RO">Romanian</option><option value="ru_RU">Russian</option><option value="sk_SK">Slovak</option><option value="sl_SI">Slovenian</option><option value="sv_SE">Swedish</option><option value="th_TH">Thai</option><option value="tr_TR">Turkish</option><option value="ku_TR">Kurdish</option><option value="zh_CN">Simplified Chinese (China)</option><option value="zh_HK">Traditional Chinese (Hong Kong)</option><option value="zh_TW">Traditional Chinese (Taiwan)</option><option value="fb_LT">Leet Speak</option><option value="af_ZA">Afrikaans</option><option value="sq_AL">Albanian</option><option value="hy_AM">Armenian</option><option value="az_AZ">Azeri</option><option value="be_BY">Belarusian</option><option value="bn_IN">Bengali</option><option value="bs_BA">Bosnian</option><option value="bg_BG">Bulgarian</option><option value="hr_HR">Croatian</option><option value="nl_BE">Dutch (Belgium)</option><option value="en_GB">English (UK)</option><option value="eo_EO">Esperanto</option><option value="et_EE">Estonian</option><option value="fo_FO">Faroese</option><option value="fr_CA">French (Canada)</option><option value="ka_GE">Georgian</option><option value="el_GR">Greek</option><option value="gu_IN">Gujarati</option><option value="hi_IN">Hindi</option><option value="is_IS">Icelandic</option><option value="id_ID">Indonesian</option><option value="ga_IE">Irish</option><option value="jv_ID">Javanese</option><option value="kn_IN">Kannada</option><option value="kk_KZ">Kazakh</option><option value="la_VA">Latin</option><option value="lv_LV">Latvian</option><option value="li_NL">Limburgish</option><option value="lt_LT">Lithuanian</option><option value="mk_MK">Macedonian</option><option value="mg_MG">Malagasy</option><option value="ms_MY">Malay</option><option value="mt_MT">Maltese</option><option value="mr_IN">Marathi</option><option value="mn_MN">Mongolian</option><option value="ne_NP">Nepali</option><option value="pa_IN">Punjabi</option><option value="rm_CH">Romansh</option><option value="sa_IN">Sanskrit</option><option value="sr_RS">Serbian</option><option value="so_SO">Somali</option><option value="sw_KE">Swahili</option><option value="tl_PH">Filipino</option><option value="ta_IN">Tamil</option><option value="tt_RU">Tatar</option><option value="te_IN">Telugu</option><option value="ml_IN">Malayalam</option><option value="uk_UA">Ukrainian</option><option value="uz_UZ">Uzbek</option><option value="vi_VN">Vietnamese</option><option value="xh_ZA">Xhosa</option><option value="zu_ZA">Zulu</option><option value="km_KH">Khmer</option><option value="tg_TJ">Tajik</option><option value="ar_AR">Arabic</option><option value="he_IL">Hebrew</option><option value="ur_PK">Urdu</option><option value="fa_IR">Persian</option><option value="sy_SY">Syriac</option><option value="yi_DE">Yiddish</option><option value="gn_PY">Guarani</option><option value="qu_PE">Quechua</option><option value="ay_BO">Aymara</option><option value="se_NO">Northern Sami</option><option value="ps_AF">Pashto</option><option value="tl_ST">Klingon</option>
+          </field>
+          <field name="ignore_pagination" type="radio" default="0" label="Ignore Pagination" description="Put the FB social plugins only at the begin or the end of the article or in every page of the article">
+             <option value="1">yes</option>
+             <option value="0">no</option>
+          </field>
+          
+          <field type="spacer" />
+          <field name="@spacer1" type="spacer" default="Facebook Like and Share Buttons Settings" label="&lt;b&gt;Facebook Like and Share Buttons Settings&lt;/b&gt;" description="Facebook Like and Share Buttons Settings" />
+          <field name="content_tobe_excluded_buttons" type="text" default="" label="Excluded Content" description="Type in Content (Article) Id to be excluded with comma"/>
+          <field name="category_tobe_excluded_buttons" type="text" default="" label="Excluded Categories" description="Type in Categories Id to be excluded with comma"/>
+          <field name="position" type="radio" default="2" label="Position to show buttons" description="Choose the position for the like and share buttons">
+             <option value="1">Before Content</option>
+             <option value="2">After Content</option>
+             <option value="3">Both</option>
+          </field>
+          <field name="container_buttons" type="list" default="1" label="Container" description="Choose the tag container for the buttons">
+             <option value="0">none</option>
+             <option value="1">div</option>
+             <option value="2">p</option>
+          </field>
+          <field name="css_buttons" type="text" default="height:40px;" label="CSS style" description="Insert a style for the buttons container" />
+          <field name="css_comments" type="text" default="border-top-style:solid;border-top-width:1px;padding:10px;text-align:center;" label="CSS style" description="Insert a style for the comment box container" />  
+          <field name="view_article_buttons" type="radio" default="1" label="Enable on Article view" description="Enable FB like and share buttons on Article view">
+             <option value="1">true</option>
+             <option value="0">false</option>
+          </field>
+          <field name="view_frontpage_buttons" type="radio" default="0" label="Enable on FrontPage view" description="Enable FB like and share buttons on FrontPage view">
+             <option value="1">true</option>
+             <option value="0">false</option>
+          </field>
+          <field name="view_category_buttons" type="radio" default="0" label="Enable on Category view" description="Enable FB like and share buttons on Category view">
+             <option value="1">true</option>
+             <option value="0">false</option>
+          </field>
+          
+          
+          
+          <field type="spacer" />
+          <field name="@spacer2" type="spacer" default="Facebook Comments Box settings" label="&lt;b&gt;Facebook Comments Box settings&lt;/b&gt;" description="Settings For Facebook Comments Box" />   
+          <field name="content_tobe_excluded_comments" type="text" default="" label="Excluded Content" description="Type in Content (Article) Id to be excluded with comma"/>
+          <field name="category_tobe_excluded_comments" type="text" default="" label="Excluded Categories" description="Type in Categories Id to be excluded with comma"/>
+          <field name="width_comments" type="text" default="450" label="Width" description="The width of comments box, in pixels"/>
+          <field name="number_comments" type="text" default="10" label="Number visible posts" description="The number of comments to show" />
+          <field name="box_color" type="list" default="light" label="Comments box colors scheme" description="Comments box colors scheme">
+             <option value="light">light</option>
+             <option value="dark">dark</option>
+          </field>
+          <field name="container_comments" type="list" default="1" label="Container" description="Choose the tag container for the button">
+             <option value="0">none</option>
+             <option value="1">div</option>
+             <option value="2">p</option>
+          </field>
+          <field name="css_comments" type="text" default="border-top-style:solid;border-top-width:1px;padding:10px;text-align:center;" label="CSS style" description="Insert a style for the comment box container" />  
+          <field name="view_article_comments" type="radio" default="1" label="Enable on Article view" description="Enable FB comments on Article view">
+             <option value="1">true</option>
+             <option value="0">false</option>
+          </field>
+          <field name="view_frontpage_comments" type="radio" default="0" label="Enable on FrontPage view" description="Enable FB comments on FrontPage view">
+             <option value="1">true</option>
+             <option value="0">false</option>
+          </field>
+          <field name="view_category_comments" type="radio" default="0" label="Enable on Category view" description="Enable FB comments on Category view">
+             <option value="1">true</option>
+             <option value="0">false</option>
+          </field>
+      </fieldset>
+      <fieldset name="advanced">
+          <field name="@spacer3" type="spacer" default="Setting For Facebook Like Button" label="&lt;b&gt;Setting For Facebook Like Button&lt;/b&gt;" description="Setting For Facebook Like Button" />
+          <field name="layout_style" type="list" default="button_count" label="Style" description="Style of the button to be displayed">
+             <option value="standard">standard</option>
+             <option value="button_count">button_count</option>
+             <option value="box_count">box_count</option>
+          </field>
+          <field name="show_faces" type="radio" default="1" label="Show Faces" description="Show Faces">
+             <option value="1">yes</option>
+             <option value="0">no</option>
+          </field>
+          <field name="send" type="radio" default="1" label="Show Send" description="Show send button">
+            <option value="1">yes</option>
+            <option value="0">no</option>
+            <option value="2">Stand alone</option>
+          </field>
+          <field name="width_like" type="text" default="450" label="Width" description="The width of this plugin, in pixels"/>
+          <field name="verb_to_display" type="radio" default="1" label="Verb to Display" description="Verb to Display">
+            <option value="1">like</option>
+            <option value="0">recommend</option>
+          </field>
+          <field name="font" type="list" default="arial" label="Font" description="The font of the plugin">
+            <option value="arial">arial</option>
+            <option value="lucida grande">lucida grande</option>
+            <option value="segoe ui">segoe ui</option>
+            <option value="tahoma">tahoma</option>
+            <option value="trebuchet ms">trebuchet ms</option>
+            <option value="verdana">verdana</option>
+          </field>
+          <field name="color_scheme" type="list" default="light" label="Color Scheme" description="Color Scheme">
+            <option value="light">light</option>
+            <option value="dark">dark</option>
+          </field>
+          <field name="container_like" type="list" default="1" label="Container" description="Choose the tag container for the like button">
+             <option value="0">none</option>
+             <option value="1">div</option>
+             <option value="2">p</option>
+          </field>
+          <field name="css_like" type="text" default="float:left;margin:10px;" label="CSS style" description="Insert a style for the button Like container" />
+          <field name="@spacer6" type="spacer" default="OpenGraph Options" label="&lt;b&gt;OpenGraph Options&lt;/b&gt;" description="OpenGraph Options; this options will be used only on article view." />
+          <field name="type" type="text" default="article" label="Object type" description="Object type"/>
+          <field name="defaultimage" type="text" default="" label="Default image path" description="The path of the default image that must be show in the FB link"/>
+          <field name="description" type="radio" default="0" label="Object description" description="Object description for the shared link">
+            <option value="0">Use meta tag description</option>
+            <option value="1">Use first paragraph</option>
+          </field>
+
+          <field type="spacer" />
+          <field name="@spacer4" type="spacer" default="Setting For Facebook Share Button" label="&lt;b&gt;Setting For Facebook Share Button&lt;/b&gt;" description="Setting For Facebook Share Button" />
+          <field name="share_button_style" type="list" default="button_count" label="Share button style" description="Share button style">
+             <option value="box_count">box count</option>
+             <option value="button_count">button count</option>
+             <option value="text">text link</option>
+             <option value="icontext">small icon and text</option>
+             <option value="icon">only icon</option>
+          </field>
+          <field name="container_share" type="list" default="1" label="Container" description="Choose the tag container for the share button">
+             <option value="0">none</option>
+             <option value="1">div</option>
+             <option value="2">p</option>
+          </field>
+          <field name="css_share" type="text" default="float:right;margin:10px;" label="CSS style" description="Insert a style for the Share button" />
+      
+          <field type="spacer" />
+          <field name="@spacer5" type="spacer" default="Setting For Facebook Comment Box" label="&lt;b&gt;Setting For Facebook Comments Box&lt;/b&gt;" description="Advanced Setting For Facebook Comments Box" />
+          <field name="enable_admin" type="radio" default="0" label="Enable Administration" description="Enable Comments Box Administration. (You must specify at least one administrator ID)">
+             <option value="1">yes</option>
+             <option value="0">no</option>
+          </field>
+          <field name="admin_id" type="text" default="" label="Facebook ID for administrators" description="Add the facebook IDs of the person enabled to moderate comments. Separate the uids by comma without spaces. This value will be used even in the opengraph options for the FB like button" />
+          <field name="enable_app" type="radio" default="0" label="Enable Application Connection" description="Enable the connection between Comments Box and your Application. (You must specify your App ID)">
+          	 <option value="1">yes</option>
+             <option value="0">no</option>
+          </field>
+          <field name="app_id" type="text" default="" label="Facebook App ID" description="Add the ID of your Facebook application. This value will be used even in the opengraph options for the FB like button" />    
+          
+          <field name="enable_comments_count" type="radio" default="0" label="Enable Post Counter" description="Enable the counter for the comments posted">
+          	<option value="1">yes</option>
+             <option value="0">no</option>
+          </field>
+          <field name="container_comments_count" type="list" default="1" label="Counter Container" description="Choose the tag container for counter">
+             <option value="0">none</option>
+             <option value="1">div</option>
+             <option value="2">p</option>
+          </field>
+          <field name="css_comments_count" type="text" default="" label="CSS style" description="Insert a style for the counter container" />
+
+      </fieldset>
+    </fields>
+  </config>
+</extension>
