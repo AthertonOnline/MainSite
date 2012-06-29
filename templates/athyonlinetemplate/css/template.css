@@ -1,6 +1,6 @@
 /* setup */
 body {
-    background: white;
+    background: url('../images/noise.png') repeat #eee;
     font-family: Tahoma, Geneva, sans-serif;
     margin: 0px;
     padding: 0px;
@@ -32,6 +32,10 @@ a:hover{
     width: 960px;
     margin: 0px auto 0px auto;
 }
+/* typography */
+p{
+	line-height: 16px;
+	}
 /* pagination */
 .home .pagination{
 	clear: both;
@@ -227,16 +231,19 @@ hr{
 	text-decoration: none;
 	}
 .home .item {
-	background: #eee;
+	background: #fff;
 	margin: 0px 0px 15px 0px;
 	padding: 10px;
 	width: 289px;
 	display: block;
+	border: 1px solid #E7E7E7;
 	}
+/*
 .home .item:hover{
 	border-right: 7px solid #4046ba;
 	margin-right: -7px;
 	}
+*/
 .home .cols-3{
 	width: 310px;
 	float: left;

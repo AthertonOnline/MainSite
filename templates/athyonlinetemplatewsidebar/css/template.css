@@ -5,12 +5,12 @@
 	display: block;
 }
 .sidebar h2{
-	color: #ccc;
+	color: #666;
 	margin: 0px 0px 10px 0px;
 	padding: 0px;
 	font-size: 20px;
 	font-weight: bold;
-	border-bottom: 6px solid #ccc;
+	border-bottom: 6px solid #666;
 	}
 .sidebar h3{
 	color: #666;
@@ -18,7 +18,7 @@
 	padding: 0px 0px 5px 0px;
 	font-size: 20px;
 	font-weight: bold;
-	border-bottom: 6px solid #ccc;
+	border-bottom: 6px solid #666;
 	}
 .sidebar .module{
 	border: 1px solid #eee;
@@ -37,7 +37,7 @@
 	margin: 0px auto 0px auto;
 	text-align: center;
 	display: block;
-	background: #ccc;
+	background: #e0e0e0;
 	color: #777;
 	text-decoration: none;
 }
@@ -49,25 +49,28 @@
 	margin: 10px 0px 0px 0px;
 	}
 .wrappage h2{
-	color: #ccc;
+	color: #666;
 	margin: 0px 0px 10px 0px;
 	padding: 0px 0px 5px 0px;
 	font-size: 20px;
 	font-weight: bold;
-	border-bottom: 6px solid #ccc;
+	border-bottom: 6px solid #666;
 	}
 .wrappage{
 	float: left;
 	width: 690px;
 	}
 .wrappage .item{
-	background: #eee;
+	background: #fff;
 	margin: 0px 0px 15px 0px;
 	padding: 10px;
+	border: 1px solid #E7E7E7;
 	}
+/* 
 .wrappage .item:hover{
 	border-right: 7px solid #4046ba;
 	}
+*/
 .wrappage .item h2{
 	width: 667px;
 	float: left;
@@ -202,8 +205,14 @@
 	}
 /* story pages */
 .item-page{
+<<<<<<< HEAD
 	padding: 10px;
+=======
+	background: white;
+	padding: 33px 45px 20px;
+>>>>>>> Restyled Site
 	margin: 0px 0px 12px 0px;
+	border: 1px solid #E7E7E7;
 	}
 .sidebar .item-page img{
 	border: 1px solid #ccc;
