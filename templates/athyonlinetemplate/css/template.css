@@ -307,20 +307,7 @@ hr{
 	margin: 0px;
 	padding: 0px;
 	}
-/* content classes for editors */
-.item-page .center {
-	text-align: center;
-	display: block;
-	margin: 0 auto;
-}
-.item-page .left {
-	float: left;
-	margin: 5px 10px;
-}
-.item-page .right {
-	float: left;
-	margin: 5px 10px;
-}	
+
 /* interactions box */
 .home .intbox{
 	background: #eee;

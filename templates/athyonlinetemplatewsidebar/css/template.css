@@ -203,6 +203,27 @@
 }
 .wrappage .pagination{
 	}
+	
+/* content classes for editors */
+.item-page .center {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
+.item-page .left {
+	float: left;
+	margin: 5px 10px;
+}
+.item-page .right {
+	float: left;
+	margin: 5px 10px;
+}
+
+.no-border {
+	border: 0px !important;
+}
+
 /* story pages */
 .item-page{
 	background: white;
@@ -215,6 +236,9 @@
 	float: right;
 	margin: 0px 0px 5px 10px;
 	}
+.item-page img {
+	border: 1px solid #666;
+    }
 .item-page h2{
 	border: none;
 	margin: 0px;
