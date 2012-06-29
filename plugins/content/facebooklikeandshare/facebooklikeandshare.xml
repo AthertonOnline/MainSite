@@ -65,9 +65,7 @@
           <field name="view_category_buttons" type="radio" default="0" label="Enable on Category view" description="Enable FB like and share buttons on Category view">
              <option value="1">true</option>
              <option value="0">false</option>
-          </field>
-          
-          
+          </field>          
           
           <field type="spacer" />
           <field name="@spacer2" type="spacer" default="Facebook Comments Box settings" label="&lt;b&gt;Facebook Comments Box settings&lt;/b&gt;" description="Settings For Facebook Comments Box" />   

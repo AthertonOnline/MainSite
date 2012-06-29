@@ -209,7 +209,7 @@ private function InjectCode(&$article, &$params, $mode,$view){
     $number_comments             = $this->params->get('number_comments');
     $width                       = $this->params->get('width_comments');
     $container_comments          = $this->params->get('container_comments','1');
-    $css_comments                = $this->params->get('css_comments','border-top-style:solid;border-top-width:1px;padding:10px;text-align:center;clear:both;');
+    $css_comments                = $this->params->get('css_comments','border-top-style:solid;border-top-width:1px;padding:10px;text-align:center;');
     if ($css_comments!="") { $css_comments="style=\"$css_comments\""; }
     $enable_comments_count       = $this->params->get('enable_comments_count');
     $container_comments_count    = $this->params->get('container_comments_count','1');
