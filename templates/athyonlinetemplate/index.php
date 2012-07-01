@@ -57,6 +57,6 @@
 			<jdoc:include type="modules" name="footer" style="xhtml" />
 		</div>
 	</div>
-
+<!-- code can be found at https://github.com/organizations/AthertonOnline. Please contribute if possible -->
 
 </body>
