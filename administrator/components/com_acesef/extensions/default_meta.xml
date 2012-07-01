@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<params group="default_meta">
+		<param name="meta_title" type="list" default="global" label="ACESEF_PARAMS_META_TITLE_AUTO" description="ACESEF_PARAMS_META_TITLE_AUTO_HELP">
+			<option value="global">Use Global</option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="separator" type="text" size="1" default="-" label="ACESEF_PARAMS_META_TITLE_SEPERATOR" description="ACESEF_PARAMS_META_TITLE_SEPERATOR_HELP" />
+		<param name="custom_sitename" type="text" default="" label="ACESEF_PARAMS_META_TITLE_CUSTOM_SITE" description="ACESEF_PARAMS_META_TITLE_CUSTOM_SITE_HELP" />
+		<param name="use_sitename" type="list" default="2" label="ACESEF_PARAMS_META_TITLE_INCLUDE_SITE" description="ACESEF_PARAMS_META_TITLE_INCLUDE_SITE_HELP" >
+			<option value="1">ACESEF_PARAMS_META_TITLE_INCLUDE_SITE_1</option>
+			<option value="2">ACESEF_PARAMS_META_TITLE_INCLUDE_SITE_2</option>
+			<option value="3">No</option>
+		</param>
+		<param name="title_prefix" type="text" default="" label="ACESEF_PARAMS_META_TITLE_PREFIX" description="ACESEF_PARAMS_META_TITLE_PREFIX_HELP"/>
+		<param name="title_suffix" type="text" default="" label="ACESEF_PARAMS_META_TITLE_SUFFIX" description="ACESEF_PARAMS_META_TITLE_SUFFIX_HELP"/>
+		<param name="page_number" type="radio" default="2" label="ACESEF_PARAMS_META_TITLE_PAGE_NUMBER" description="ACESEF_PARAMS_META_TITLE_PAGE_NUMBER_HELP">
+			<option value="1">No</option>
+ 			<option value="2">Yes</option>
+		</param>
+		<param type="spacer" default="" />
+		<param name="meta_desc" type="list" default="global" label="ACESEF_PARAMS_META_DESC_AUTO" description="ACESEF_PARAMS_META_DESC_AUTO_HELP">
+			<option value="global">Use Global</option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="desc_inc_title" type="radio" default="2" label="ACESEF_PARAMS_META_DESC_INC_TITLE" description="ACESEF_PARAMS_META_DESC_INC_TITLE_HELP">
+			<option value="1">No</option>
+ 			<option value="2">Yes</option>
+		</param>
+	   <param name="desc_clip" type="list" default="1" label="ACESEF_PARAMS_META_DESC_CLIP" description="ACESEF_PARAMS_META_DESC_CLIP_HELP">
+	   	   <option value="1">ACESEF_PARAMS_META_DESC_CLIP_1</option>
+		   <option value="2">ACESEF_PARAMS_META_DESC_CLIP_2</option>
+		   <option value="3">ACESEF_PARAMS_META_DESC_CLIP_3</option>
+	   </param>
+		<param name="desc_clip_s" type="text" default="2" size="5" label="ACESEF_PARAMS_META_DESC_CLIP_S" description="ACESEF_PARAMS_META_DESC_CLIP_S_HELP" />
+		<param name="desc_clip_w" type="text" default="20" size="5" label="ACESEF_PARAMS_META_DESC_CLIP_W" description="ACESEF_PARAMS_META_DESC_CLIP_W_HELP" />
+		<param name="desc_clip_c" type="text" default="250" size="5" label="ACESEF_PARAMS_META_DESC_CLIP_C" description="ACESEF_PARAMS_META_DESC_CLIP_C_HELP" />
+		<param type="spacer" default="" />
+		<param name="meta_key" type="list" default="global" label="ACESEF_PARAMS_META_KEY_AUTO" description="ACESEF_PARAMS_META_KEY_AUTO_HELP">
+			<option value="global">Use Global</option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="keywords_word" type="text" default="3" size="5" label="ACESEF_PARAMS_META_KEY_LENGTH" description="ACESEF_PARAMS_META_KEY_LENGTH_HELP" />
+		<param name="keywords_count" type="text" default="15" size="5" label="ACESEF_PARAMS_META_KEY_NUMBER" description="ACESEF_PARAMS_META_KEY_NUMBER_HELP" />
+		<param name="keywords_backlist" type="list" default="global" label="ACESEF_PARAMS_META_KEY_BLACKLIST" description="ACESEF_PARAMS_META_KEY_BLACKLIST_HELP">
+			<option value="global">ACESEF_PARAMS_META_KEY_LIST_1</option>
+			<option value="following">ACESEF_PARAMS_META_KEY_LIST_2</option>
+			<option value="combine">ACESEF_PARAMS_META_KEY_LIST_3</option>
+		</param>
+		<param name="blacklist" type="textarea" cols="50" rows="13" label="ACESEF_CONFIG_META_BLACKLIST" description="ACESEF_CONFIG_META_BLACKLIST_HELP" default="a, able, about, above, abroad, according, accordingly, across, actually, adj, after, afterwards, again, against, ago, ahead, ain't, all, allow, allows, almost, alone, along, alongside, already, also, although, always, am, amid, amidst, among, amongst, an, and, another, any, anybody, anyhow, anyone, anything, anyway, anyways, anywhere, apart, appear, appreciate, appropriate, are, aren't, around, as, a's, aside, ask, asking, associated, at, available, away, awfully, b, back, backward, backwards, be, became, because, become, becomes, becoming, been, before, beforehand, begin, behind, being, believe, below, beside, besides, best, better, between, beyond, both, brief, but, by, c, came, can, cannot, cant, can't, caption, cause, causes, certain, certainly, changes, clearly, c'mon, co, co., com, come, comes, concerning, consequently, consider, considering, contain, containing, contains, corresponding, could, couldn't, course, c's, currently, d, dare, daren't, definitely, described, despite, did, didn't, different, directly, do, does, doesn't, doing, done, don't, down, downwards, during, e, each, edu, eg, eight, eighty, either, else, elsewhere, end, ending, enough, entirely, especially, et, etc, even, ever, evermore, every, everybody, everyone, everything, everywhere, ex, exactly, example, except, f, fairly, far, farther, few, fewer, fifth, first, five, followed, following, follows, for, forever, former, formerly, forth, forward, found, four, from, further, furthermore, g, get, gets, getting, given, gives, go, goes, going, gone, got, gotten, greetings, h, had, hadn't, half, happens, hardly, has, hasn't, have, haven't, having, he, he'd, he'll, hello, help, , hence, her, here, hereafter, hereby, herein, here's, hereupon, hers, herself, he's, hi, him, himself, his, hither, hopefully, how, howbeit, however, hundred, i, i'd, ie, if, ignored, i'll, i'm, immediate, in, inasmuch, inc, inc., indeed, indicate, indicated, indicates, inner, inside, insofar, instead, into, inward, is, isn't, it, it'd, it'll, its, it's, itself, i've, j, just, k, keep, keeps, kept, know, known, knows, l, last, lately, later, latter, latterly, least, less, lest, let, let's, like, liked, likely, likewise, little, look, looking, looks, low, lower, ltd, m, made, mainly, make, makes, many, may, maybe, mayn't, me, mean, meantime, meanwhile, merely, might, mightn't, mine, minus, miss, more, moreover, most, mostly, mr, mrs, much, must, mustn't, my, myself, n, name, namely, nd, near, nearly, necessary, need, needn't, needs, neither, never, neverf, neverless, nevertheless, new, next, nine, ninety, no, nobody, non, none, nonetheless, noone, no-one, nor, normally, not, nothing, notwithstanding, novel, now, nowhere, o, obviously, of, off, often, oh, ok, okay, old, on, once, one, ones, one's, only, onto, opposite, or, other, others, otherwise, ought, oughtn't, our, ours, ourselves, out, outside, over, overall, own, p, particular, particularly, past, per, perhaps, placed, please, plus, possible, presumably, probably, provided, provides, q, que, quite, qv, r, rather, rd, re, really, reasonably, recent, recently, regarding, regardless, regards, relatively, respectively, right, round, s, said, same, saw, say, saying, says, second, secondly, , see, seeing, seem, seemed, seeming, seems, seen, self, selves, sensible, sent, serious, seriously, seven, several, shall, shan't, she, she'd, she'll, she's, should, shouldn't, since, six, so, some, somebody, someday, somehow, someone, something, sometime, sometimes, somewhat, somewhere, soon, sorry, specified, specify, specifying, still, sub, such, sup, sure, t, take, taken, taking, tell, tends, th, than, thank, thanks, thanx, that, that'll, thats, that's, that've, the, their, theirs, them, themselves, then, thence, there, thereafter, thereby, there'd, therefore, therein, there'll, there're, theres, there's, thereupon, there've, these, they, they'd, they'll, they're, they've, thing, things, think, third, thirty, this, thorough, thoroughly, those, though, three, through, throughout, thru, thus, till, to, together, too, took, toward, towards, tried, tries, truly, try, trying, t's, twice, two, u, un, under, underneath, undoing, unfortunately, unless, unlike, unlikely, until, unto, up, upon, upwards, us, use, used, useful, uses, using, usually, v, value, various, versus, very, via, viz, vs, w, want, wants, was, wasn't, way, we, we'd, welcome, well, we'll, went, were, we're, weren't, we've, what, whatever, what'll, what's, what've, when, whence, whenever, where, whereafter, whereas, whereby, wherein, where's, whereupon, wherever, whether, which, whichever, while, whilst, whither, who, who'd, whoever, whole, who'll, whom, whomever, who's, whose, why, will, willing, wish, with, within, without, wonder, won't, would, wouldn't, x, y, yes, yet, you, you'd, you'll, your, you're, yours, yourself, yourselves, you've, z, zero" />
+		<param name="keywords_whitelist" type="list" default="global" label="ACESEF_PARAMS_META_KEY_WHITELIST" description="ACESEF_PARAMS_META_KEY_WHITELIST_HELP">
+			<option value="global">ACESEF_PARAMS_META_KEY_LIST_1</option>
+			<option value="following">ACESEF_PARAMS_META_KEY_LIST_2</option>
+			<option value="combine">ACESEF_PARAMS_META_KEY_LIST_3</option>
+		</param>
+		<param name="whitelist" type="textarea" cols="50" rows="8" label="ACESEF_CONFIG_META_WHITELIST" description="ACESEF_CONFIG_META_WHITELIST_HELP" default="" />
+	</params>
+</metadata>

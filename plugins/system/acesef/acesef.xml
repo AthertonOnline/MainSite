@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - AceSEF</name>
+	<author>JoomAce LLC</author>
+	<creationDate>July 2010</creationDate>
+	<copyright>(C) 2009-2010 JoomAce LLC</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.7.0</version>
+	<description>Provides a custom URL rewriting class.</description>
+	<files>
+		<filename plugin="acesef">acesef.php</filename>
+	</files>
+</install>

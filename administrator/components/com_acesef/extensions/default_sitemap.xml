@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<params group="default_sitemap_auto_header">
+		<param type="spacer" default="ACESEF_CONFIG_LEGEND_SITEMAP_AUTO" />
+	</params>
+	<params group="default_sitemap_auto_cats">
+		<param name="sm_auto_enable_cats" type="list" default="global" label="ACESEF_CONFIG_ENABLE_CATS" description="ACESEF_CONFIG_ENABLE_CATS_HELP">
+			<option value="global">Use Global</option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="sm_auto_cats" type="categorylist" label="Categories" description="ACESEF_PARAMS_CATS_HELP" />
+	</params>
+	<params group="default_sitemap_auto">
+		<param name="sm_auto_filter_s" type="textarea" default="" cols="50" rows="3" label="ACESEF_CONFIG_SITEMAP_AUTO_FILTER_SEF" description="ACESEF_CONFIG_SITEMAP_AUTO_FILTER_SEF_HELP" />
+		<param name="sm_auto_filter_r" type="textarea" default="" cols="50" rows="3" label="ACESEF_CONFIG_SITEMAP_AUTO_FILTER_REAL" description="ACESEF_CONFIG_SITEMAP_AUTO_FILTER_REAL_HELP" />
+		<param type="spacer" default="ACESEF_PARAMS_SITEMAP_CRON" />
+		<param name="sm_auto_xml" type="list" default="global" label="ACESEF_CONFIG_SITEMAP_AUTO_XML" description="ACESEF_PARAMS_SITEMAP_XML_HELP">
+			<option value="global">Use Global</option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="sm_auto_ping_c" type="list" default="global" label="ACESEF_CONFIG_SITEMAP_AUTO_CRAWLERS" description="ACESEF_PARAMS_SITEMAP_CRAWLERS_HELP">
+			<option value="global">Use Global</option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="sm_auto_ping_s" type="list" default="global" label="ACESEF_CONFIG_SITEMAP_AUTO_SERVICES" description="ACESEF_PARAMS_SITEMAP_SERVICES_HELP">
+			<option value="global">Use Global</option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+	</params>
+</metadata>

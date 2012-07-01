@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="acesef_ext" version="1.5.0" method="upgrade">
+	<name>Web Links</name>
+	<author>JoomAce LLC</author>
+	<creationDate>June 2010</creationDate>
+	<copyright>(C) 2009-2010 JoomAce LLC</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.5.1</version>
+	<description>Web Links extension for AceSEF.</description>
+	<files>
+		<filename acesef_ext="com_weblinks">com_weblinks.php</filename>
+	</files>
+	<params group="url">
+		<param name="link_part" type="list" default="global" label="ACESEF_PARAMS_WEBLINKS_PART_LINK" description="ACESEF_PARAMS_WEBLINKS_PART_LINK">
+ 			<option value="global">Use Global</option>
+ 			<option value="title">ACESEF_COMMON_TITLE_FIELD</option>
+ 			<option value="alias">ACESEF_COMMON_ALIAS_FIELD</option>
+ 		</param>
+		<param name="category_part" type="list" default="global" label="ACESEF_PARAMS_URL_PART_CATEGORY" description="ACESEF_PARAMS_URL_PART_CATEGORY">
+ 			<option value="global">Use Global</option>
+ 			<option value="title">ACESEF_COMMON_TITLE_FIELD</option>
+ 			<option value="alias">ACESEF_COMMON_ALIAS_FIELD</option>
+ 		</param>
+		<param type="spacer" default="&lt;hr/&gt;" />
+		<param name="linkid_inc" type="radio" default="1" label="ACESEF_PARAMS_WEBLINKS_LINK_ID" description="ACESEF_PARAMS_WEBLINKS_LINK_ID_HELP">
+ 			<option value="1">No</option>
+ 			<option value="2">Yes</option>
+ 		</param>
+ 		<param name="category_inc" type="radio" default="2" label="ACESEF_PARAMS_URL_CATEGORY" description="ACESEF_PARAMS_URL_CATEGORY_HELP">
+ 			<option value="1">No</option>
+ 			<option value="2">Yes</option>
+ 		</param>
+		<param name="categoryid_inc" type="radio" default="1" label="ACESEF_PARAMS_URL_CATEGORY_ID" description="ACESEF_PARAMS_URL_CATEGORY_ID_HELP">
+ 			<option value="1">No</option>
+ 			<option value="2">Yes</option>
+ 		</param>
+	</params>
+	<params group="categorylist">
+ 		<param name="categorylist" type="text" label="" description=""/>
+	</params>
+</install>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="acesef_ext" version="1.5.0" method="upgrade">
+	<name>Search</name>
+	<author>JoomAce LLC</author>
+	<creationDate>June 2010</creationDate>
+	<copyright>(C) 2009-2010 JoomAce LLC</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.5.1</version>
+	<description>Search extension for AceSEF.</description>
+	<files>
+		<filename acesef_ext="com_search">com_search.php</filename>
+	</files>
+	<install>
+		<defaultParams>
+			<defaultParam name="prefix" value="search" />
+			<defaultParam name="non_sef_vars" value="ordering, searchphrase, submit, searchword, areas" />
+		</defaultParams>
+	</install>
+</install>

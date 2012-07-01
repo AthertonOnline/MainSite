@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="acesef_ext" version="1.5.0" method="upgrade">
+	<name>Content</name>
+	<author>JoomAce LLC</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>(C) 2009-2011 JoomAce LLC</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.5.12</version>
+	<description>Content (Articles) extension for AceSEF.</description>
+	<files>
+		<filename acesef_ext="com_content">com_content.php</filename>
+	</files>
+	<install>
+		<defaultParams>
+			<defaultParam name="skip_menu" value="1" />
+			<defaultParam name="non_sef_vars" value="ret" />
+		</defaultParams>
+	</install>
+	<params group="url">
+		<param name="article_part" type="list" default="global" label="ACESEF_PARAMS_CONTENT_PART_ARTICLE" description="ACESEF_PARAMS_CONTENT_PART_ARTICLE">
+			<option value="global">Use Global</option>
+			<option value="title">ACESEF_COMMON_TITLE_FIELD</option>
+			<option value="alias">ACESEF_COMMON_ALIAS_FIELD</option>
+		</param>
+		<param name="category_part" type="list" default="global" label="ACESEF_PARAMS_URL_PART_CATEGORY" description="ACESEF_PARAMS_URL_PART_CATEGORY">
+			<option value="global">Use Global</option>
+			<option value="title">ACESEF_COMMON_TITLE_FIELD</option>
+			<option value="alias">ACESEF_COMMON_ALIAS_FIELD</option>
+		</param>
+		<param name="section_part" type="list" default="global" label="ACESEF_PARAMS_CONTENT_PART_SECTION" description="ACESEF_PARAMS_CONTENT_PART_SECTION">
+			<option value="global">Use Global</option>
+			<option value="title">ACESEF_COMMON_TITLE_FIELD</option>
+			<option value="alias">ACESEF_COMMON_ALIAS_FIELD</option>
+		</param>
+		<param type="spacer" default="&lt;hr/&gt;" />
+		<param name="smart_itemid" type="radio" default="1" label="Use Smart ItemID" description="If set to Yes, AceSEF will try to get the proper ItemID in a smart way.">
+ 			<option value="1">No</option>
+ 			<option value="2">Yes</option>
+ 		</param>
+		<param type="spacer" default="&lt;hr/&gt;" />
+		<param name="layout_prefix" type="radio" default="2" label="ACESEF_PARAMS_CONTENT_LAYOUT_PREFIX" description="ACESEF_PARAMS_CONTENT_LAYOUT_PREFIX_ID_HELP">
+			<option value="1">No</option>
+			<option value="2">Yes</option>
+		</param>
+		<param name="blog_prefix" type="text" default="" label="ACESEF_PARAMS_CONTENT_LAYOUT_BLOG" description="ACESEF_PARAMS_CONTENT_LAYOUT_BLOG" />
+		<param name="list_prefix" type="text" default="List" label="ACESEF_PARAMS_CONTENT_LAYOUT_LIST" description="ACESEF_PARAMS_CONTENT_LAYOUT_LIST" />
+		<param type="spacer" default="&lt;hr/&gt;" />
+		<param name="url_structure" type="list" default="joomla" label="Articles' URL Structure" description="Articles' URL Structure">
+			<option value="joomla">(Joomla) Title or alias</option>
+			<option value="daytitle">(WordPress) Day and title</option>
+			<option value="monthtitle">(WordPress) Month and title</option>
+			<option value="numeric">(WordPress) Numeric</option>
+			<option value="custom">(WordPress) Custom Structure</option>
+		</param>
+		<param name="custom_structure" type="text" size="50" default="{category}/{article}" label="(WP) Custom Structure" description="Available tags: {category}, {article}, {author}, {year}, {month}, {day}. Unite these tags with / between them like: {category}/{article}/{author}" />
+		<param name="articleid_inc" type="radio" default="1" label="ACESEF_PARAMS_CONTENT_ARTICLE_ID" description="ACESEF_PARAMS_CONTENT_ARTICLE_ID_HELP">
+			<option value="1">No</option>
+			<option value="2">Yes</option>
+		</param>
+		<param name="category_inc" type="list" default="2" label="ACESEF_PARAMS_URL_CATEGORY" description="ACESEF_PARAMS_URL_CATEGORY_HELP">
+ 			<option value="1">No</option>
+ 			<option value="2">ACESEF_PARAMS_URL_CATEGORY_LAST</option>
+ 			<option value="3">ACESEF_PARAMS_URL_CATEGORY_ALL</option>
+ 		</param>
+		<param name="categoryid_inc" type="radio" default="1" label="ACESEF_PARAMS_URL_CATEGORY_ID" description="ACESEF_PARAMS_URL_CATEGORY_ID_HELP">
+			<option value="1">No</option>
+			<option value="2">Yes</option>
+		</param>
+		<param name="section_inc" type="radio" default="1" label="ACESEF_PARAMS_CONTENT_SECTION" description="ACESEF_PARAMS_CONTENT_SECTION_HELP">
+			<option value="1">No</option>
+			<option value="2">Yes</option>
+		</param>
+		<param name="sectionid_inc" type="radio" default="1" label="ACESEF_PARAMS_CONTENT_SECTION_ID" description="ACESEF_PARAMS_CONTENT_SECTION_ID_HELP">
+			<option value="1">No</option>
+			<option value="2">Yes</option>
+		</param>
+		<param name="cat_suffix" type="radio" default="1" label="ACESEF_PARAMS_URL_CATEGORY_SUFFIX" description="ACESEF_PARAMS_URL_CATEGORY_SUFFIX_HELP">
+			<option value="1">No</option>
+			<option value="2">Yes</option>
+		</param>
+		<param name="default_index" type="text" default="" label="ACESEF_PARAMS_URL_CATEGORY_INDEX" description="ACESEF_PARAMS_URL_CATEGORY_INDEX_HELP" />
+		<param type="spacer" default="&lt;hr/&gt;" />
+		<param name="google_news" type="list" default="1" label="ACESEF_PARAMS_URL_GNEWS" description="ACESEF_PARAMS_URL_GNEWS_HELP">
+			<option value="1">ACESEF_PARAMS_URL_GNEWS_1</option>
+			<option value="2">ACESEF_PARAMS_URL_GNEWS_2</option>
+			<option value="3">ACESEF_PARAMS_URL_GNEWS_3</option>
+			<option value="4">ACESEF_PARAMS_URL_GNEWS_4</option>
+		</param>
+		<param name="google_news_pos" type="list" default="2" label="ACESEF_PARAMS_URL_GNEWS_POSITION" description="">
+			<option value="1">ACESEF_PARAMS_URL_GNEWS_POSITION_1</option>
+			<option value="2">ACESEF_PARAMS_URL_GNEWS_POSITION_2</option>
+		</param>
+		<param name="google_news_digits" type="text" default="3" label="ACESEF_PARAMS_URL_GNEWS_DIGITS" description="ACESEF_PARAMS_URL_GNEWS_DIGITS_HELP" />
+		<param name="google_news_dateformat" type="text" default="ddmm" label="ACESEF_PARAMS_URL_GNEWS_DATE" description="ACESEF_PARAMS_URL_GNEWS_DATE_HELP" />
+		<param name="google_news_cats" type="categorylist" default="all" label="Categories" description="ACESEF_PARAMS_CATS_HELP" />
+	</params>
+	<params group="meta">
+		<param type="spacer" default="&lt;hr/&gt;" />
+		<param name="item_desc" type="list" default="1" label="Content description from" description="Select from where should the meta description and keywords grabbed.">
+			<option value="1">Item text</option>
+			<option value="2">Item meta desc</option>
+		</param>
+	</params>
+	<params group="categorylist">
+		<param name="categorylist" type="text" label="" description=""/>
+	</params>
+</install>

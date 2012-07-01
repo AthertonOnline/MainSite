@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="acesef_ext" version="1.5.0" method="upgrade">
+	<name>Wrapper</name>
+	<author>JoomAce LLC</author>
+	<creationDate>June 2010</creationDate>
+	<copyright>(C) 2009-2010 JoomAce LLC</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.5.0</version>
+	<description>Wrapper extension for AceSEF.</description>
+	<files>
+		<filename acesef_ext="com_wrapper">com_wrapper.php</filename>
+	</files>
+</install>

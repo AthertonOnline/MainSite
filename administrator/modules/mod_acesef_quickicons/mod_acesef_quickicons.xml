@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD module 1.0//EN" "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" version="1.5" client="administrator" method="upgrade">
+	<name>AceSEF - Quick Icons</name>
+	<author>JoomAce LLC</author>
+	<creationDate>September 2010</creationDate>
+	<copyright>(C) 2009-2010 JoomAce LLC</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.7.0</version>
+	<description>This module shows AceSEF Quick Icons on the Admin area Home Page. Publish in "icon" position.</description>
+	<files>
+		<filename module="mod_acesef_quickicons">mod_acesef_quickicons.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.mod_acesef_quickicons.ini</language>
+	</languages>
+	<params>
+		<param name="acesef_version" type="radio" default="1" label="Version Status" description="Show Version Status button.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="acesef_configuration" type="radio" default="0" label="Configuration" description="Show Configuration button.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="acesef_extensions" type="radio" default="0" label="Extensions" description="Show Extensions button.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="acesef_urls" type="radio" default="1" label="URLs" description="Show URLs button.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="acesef_metadata" type="radio" default="1" label="Metadata" description="Show Metadata button.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="acesef_sitemap" type="radio" default="1" label="Sitemap" description="Show Sitemap button.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="acesef_tags" type="radio" default="1" label="Tags" description="Show Tags button.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="acesef_ilinks" type="radio" default="0" label="Internal Links" description="Show Internal Links button.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="acesef_bookmarks" type="radio" default="0" label="Social Bookmarks" description="Show Social Bookmarks button.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

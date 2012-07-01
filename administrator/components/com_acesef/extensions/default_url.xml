@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<params group="default_url">
+		<param name="router" type="routerlist" default="1" label="ACESEF_EXTENSIONS_VIEW_ROUTER" description="ACESEF_PARAMS_URL_ROUTER_HELP" />
+		<param name="prefix" type="text" default="" label="ACESEF_EXTENSIONS_VIEW_PREFIX" description="ACESEF_PARAMS_URL_PREFIX_HELP" />
+		<param name="skip_menu" type="radio" default="1" label="ACESEF_EXTENSIONS_VIEW_SKIP" description="ACESEF_PARAMS_URL_SKIPMENU_HELP">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</param>
+ 		<param type="spacer" default="" />
+		<param name="global_smart_itemid" type="list" default="global" label="ACESEF_CONFIG_URL_SMART_ITEMID" description="ACESEF_CONFIG_URL_SMART_ITEMID_HELP">
+ 			<option value="global">Use Global</option>
+ 			<option value="yes">Yes</option>
+ 			<option value="no">No</option>
+ 		</param>
+		<param name="ignore_multi_itemid" type="list" default="global" label="ACESEF_CONFIG_URL_IGNORE_MULTI_ITEMID" description="ACESEF_CONFIG_URL_IGNORE_MULTI_ITEMID_HELP">
+ 			<option value="global">Use Global</option>
+ 			<option value="yes">Yes</option>
+ 			<option value="no">No</option>
+ 		</param>
+		<param name="numeral_duplicated" type="list" default="global" label="ACESEF_PARAMS_URL_NUM_DUPLICATED" description="ACESEF_PARAMS_URL_NUM_DUPLICATED_HELP">
+ 			<option value="global">Use Global</option>
+ 			<option value="yes">Yes</option>
+ 			<option value="no">No</option>
+ 		</param>
+		<param name="record_duplicated" type="list" default="global" label="ACESEF_PARAMS_URL_REC_DUPLICATED" description="ACESEF_PARAMS_URL_REC_DUPLICATED_HELP">
+ 			<option value="global">Use Global</option>
+ 			<option value="yes">Yes</option>
+ 			<option value="no">No</option>
+ 		</param>
+		<param name="limit_num" type="text" default="" label="ACESEF_PARAMS_URL_ITEMS_PER_PAGE" description="ACESEF_PARAMS_URL_ITEMS_PER_PAGE_HELP" />
+		<param type="spacer" default="" />
+		<param name="override" type="radio" default="1" label="ACESEF_PARAMS_URL_OVERRIDE" description="ACESEF_PARAMS_URL_OVERRIDE_HELP">
+		  <option value="1">No</option>
+		  <option value="2">Yes</option>
+		</param>
+		<param name="override_id" type="text" default="" label="ACESEF_PARAMS_URL_OVERRIDE_ID" description="ACESEF_PARAMS_URL_OVERRIDE_ID_HELP" />
+		<param type="spacer" default="" />
+		<param name="menu_start_level" type="text" default="0" label="ACESEF_PARAMS_URL_MENU_START_LEVEL" description="ACESEF_PARAMS_URL_MENU_START_LEVEL_HELP" />
+		<param name="menu_length_level" type="text" default="0" label="ACESEF_PARAMS_URL_MENU_LENGTH_LEVEL" description="ACESEF_PARAMS_URL_MENU_LENGTH_LEVEL_HELP" />
+		<param type="spacer" default="" />
+		<param name="non_sef_vars" type="textarea" cols="50" rows="3" default="" label="ACESEF_CONFIG_URL_NONSEF_VARS" description="ACESEF_PARAMS_URL_NON_SEF_HELP" />
+		<param name="disable_sef_vars" type="textarea" cols="50" rows="3" default="" label="ACESEF_CONFIG_URL_DISABLESEF_VARS" description="ACESEF_PARAMS_URL_DIS_SEF_HELP" />
+		<param name="skip_menu_vars" type="textarea" cols="50" rows="3" default="" label="ACESEF_CONFIG_URL_SKIPMENU_VARS" description="ACESEF_PARAMS_URL_SKIP_MENU_HELP" />
+	</params>
+</metadata>

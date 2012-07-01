@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<params group="default_ilinks">
+		<param name="ilinks_area" type="list" default="global" label="ACESEF_CONFIG_AREA" description="ACESEF_CONFIG_AREA_HELP">
+			<option value="global">Use Global</option>
+			<option value="1">ACESEF_CONFIG_AREA_1</option>
+			<option value="2">ACESEF_CONFIG_AREA_2</option>
+			<option value="3">ACESEF_CONFIG_AREA_3</option>
+		</param>
+	</params>
+	<params group="default_ilinks_cats">
+		<param name="tags_in_cats" type="list" default="global" label="ACESEF_CONFIG_SHOW_IN_CATS" description="ACESEF_CONFIG_SHOW_IN_CATS_HELP">
+			<option value="global">Use Global</option>
+			<option value="no">No</option>
+			<option value="yes">Yes</option>
+		</param>
+		<param name="ilinks_enable_cats" type="list" default="global" label="ACESEF_CONFIG_ENABLE_CATS" description="ACESEF_CONFIG_ENABLE_CATS_HELP">
+			<option value="global">Use Global</option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="ilinks_cats" type="categorylist" label="Categories" description="ACESEF_PARAMS_CATS_HELP" />
+	</params>
+</metadata>

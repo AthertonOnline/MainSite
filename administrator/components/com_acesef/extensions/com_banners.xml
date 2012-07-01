@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="acesef_ext" version="1.5.0" method="upgrade">
+	<name>Banners</name>
+	<author>JoomAce LLC</author>
+	<creationDate>June 2010</creationDate>
+	<copyright>(C) 2009-2010 JoomAce LLC</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.5.2</version>
+	<description>Banners extension for AceSEF.</description>
+	<files>
+		<filename acesef_ext="com_banners">com_banners.php</filename>
+	</files>
+	<install>
+		<defaultParams>
+			<defaultParam name="prefix" value="banner" />
+		</defaultParams>
+	</install>
+	<params group="url">
+		<param name="bannerid_inc" type="radio" default="1" label="ACESEF_PARAMS_BANNERS_BANNER_ID" description="ACESEF_PARAMS_BANNERS_BANNER_ID_HELP">
+ 			<option value="1">No</option>
+ 			<option value="2">Yes</option>
+ 		</param>
+	</params>
+	<params group="categorylist">
+ 		<param name="categorylist" type="text" label="" description=""/>
+	</params>
+</install>

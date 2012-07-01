@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Tags">
+		<message>
+			<![CDATA[This layout will display the list of items associated with the selected tag.]]>
+		</message>
+	</layout>
+</metadata>
