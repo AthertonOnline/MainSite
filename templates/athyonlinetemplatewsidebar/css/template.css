@@ -247,12 +247,13 @@
 .item-page h2 a{
 	text-decoration: none;
 	}
-.item-page .pagenav{
+.item-page .pagenav {
 	width: 669px;
-	background: #ccc;
+	background: #CCC;
 	margin: 10px 0px 0px 0px;
 	display: block;
 	padding: 0px;
+	clear: both;
 	}
 .item-page .pagenav li{
 	list-style: none;
