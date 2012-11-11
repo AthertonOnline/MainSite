@@ -275,3 +275,7 @@
 	margin-left: 483px !important;
 	}
 	
+.item-page .pagenav-prev {
+	clear: both;
+}
+	
