@@ -224,7 +224,7 @@
 	border: 0px !important;
 }
 
-.item-page caption {
+.item-page .caption {
 	text-align: center;
 	width: 100%;
 	display: block;
