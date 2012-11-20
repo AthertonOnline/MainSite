@@ -224,6 +224,14 @@
 	border: 0px !important;
 }
 
+.item-page caption {
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-style: italic;
+	font-weight: bold;
+}
+
 /* story pages */
 .item-page{
 	background: white;
